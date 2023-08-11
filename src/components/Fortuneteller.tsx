@@ -35,14 +35,14 @@ const FortuneTeller: FC<{
         type="button"
         disabled={request}
         onClick={() => setRequest(true)}
-        className="bg-blue-700 min-w-[10rem] px-3 py-2 mb-10 text-lg md:text-xl lg:text-2xl rounded font-bold shadow mx-auto block text-white hover:bg-blue-600 active:bg-blue-800 disabled:grayscale"
+        className="bg-blue-600 min-w-[10rem] px-3 py-2 mb-10 text-lg md:text-xl lg:text-2xl rounded font-bold shadow mx-auto block text-white hover:bg-blue-400 active:bg-blue-600 disabled:grayscale"
       >
         {request ? "On progress..." : data ? "Ask again" : "Ask"}
       </button>
       {error && <p className="text-rose-600">{error.message}</p>}
       {data && (
         <article className="border border-black/50 bg-black/40 backdrop-blur-xl p-3 md:p-5 xl:p-7 my-5 text-white max-w-screen-md 2xl:max-w-[50%] mx-auto shadow rounded-xl">
-          <p className="text-base">{data.message}</p>
+          <p className="result-text">{data.message}</p>
         </article>
       )}
     </div>

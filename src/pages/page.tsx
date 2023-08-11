@@ -7,7 +7,7 @@ export default function Page() {
       <div className="bg-black/50 flex flex-col flex-1">
         <header className="relative overflow-hidden">
           <div className="flex items-center justify-center w-full h-96">
-            <h1 className="text-3xl md:text-5xl font-bold text-white drop-shadow">Tell fortunes with GPT</h1>
+            <h1 className="text-3xl md:text-5xl font-bold text-amber-100 drop-shadow">Tell fortunes with GPT</h1>
           </div>
         </header>
         <main className="relative flex-1">
